@@ -1,0 +1,122 @@
+/* Header */
+.header {
+  background-color: #ffffff;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  /*text-align: center;*/
+}
+
+.header a {
+    color: #000000;
+    padding: 0 7px;
+    text-decoration: none;
+
+}
+
+.header a:hover {
+    color: pink;
+}
+
+
+/* Navigation */
+nav ul,
+nav ul ul {
+    display: inline-block;
+    list-style-type: none;
+}
+
+nav.primary ul,
+nav.primary ul li {
+  margin: 0px;
+}
+
+nav.primary ul li {
+  display: inline;
+  float: left;
+  position: relative;
+}
+
+nav.primary ul li a {
+  display: inline-table;
+/*  line-height: 49px; */
+  padding: 0 14px;
+  color: #000000;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: light;
+  letter-spacing: 0.08em;
+}
+
+nav.primary ul li a:hover {
+  color: pink;
+  cursor: pointer;
+}
+
+nav.primary ul ul {
+  position: absolute;
+  z-index: 999;
+  min-width: 100%;
+  background-color: #ffffff;
+  height: 0px;
+  overflow: hidden;
+}
+
+nav.primary ul li:hover ul {
+  height: auto;
+  overflow: auto;
+}
+
+nav.primary ul ul li {
+  display: list-item;
+  list-style: none;
+}
+
+nav.primary ul ul li a {
+  display: block;
+  line-height: 35px;
+  text-transform: none;
+}
+
+nav.primary ul li:hover > a {
+  color: pink;
+}
+
+
+/* Content */
+.content {
+  top: relative;
+  min-height: 100%;
+}
+body {
+  padding-top: 200px;
+}
+@media (max-width: 475px) {
+  body {
+    padding-top: 200px;
+  }
+}
+
+
+/* Footer */
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: auto;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.footer a {
+    color: #000000;
+    padding: 0 7px;
+
+}
+
+.footer a:hover {
+    color: pink;
+}
