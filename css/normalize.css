@@ -4,12 +4,19 @@
  * 1. Set default font family to sans-serif.
  * 2. Prevent iOS text size adjust after orientation change, without disabling
  *    user zoom.
+ * 3. Apply border-box to add borders inside.
  */
 
 html {
   font-family: sans-serif; /* 1 */
   -ms-text-size-adjust: 100%; /* 2 */
   -webkit-text-size-adjust: 100%; /* 2 */
+  box-sizing: border-box; /* 3 */
+}
+
+/* 3 */
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 /**
